@@ -23,3 +23,14 @@
 
 # Conditional Statements
 
+
+## Function ##
+
+
+## Decission making with If..else
+
+
+
+
+
+
