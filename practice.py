@@ -60,3 +60,41 @@
 # for number in counter(10):
 #    print(number)
 #    time.sleep(1)
+
+
+
+## Iterator: Ye ek esa object(list, tuple, string, set) hota hai jo values ko ek ek krke return krta hai.
+
+
+
+# Built in Decorators: 
+# 1) @property: Ek esa decortor hota hai jo ksi method mein property ki trah behavior peda krta hai.
+class User:
+    name = "Saqib"
+    @property
+    def my_name(self):
+        return "M Saqib Khan"
+
+obj = User()
+print(obj.my_name)
+
+
+
+# 2) @staticmethod: Aisa method jo class ya object ki state use nhi karta.
+class Add:
+    @staticmethod
+    def addition(a, b):
+        return a + b
+result = Add()
+print(result.addition(4, 5))
+
+
+
+# 3) @classmethod: Aisa method js mein first parameter cls hota hai jo class ko refer karta hai. Yni wo method class k attributes pr kaam krta hai.
+class School:
+    sch_name = "ABC"
+    @classmethod
+    def school_name(cls):
+        return cls.sch_name
+result = School()
+print(result.school_name())
